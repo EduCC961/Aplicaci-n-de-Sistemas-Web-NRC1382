@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad Educativa Abelardo Flores</title>
+    <link rel="stylesheet" href="Actividad2.css">
+</head>
+<body>
+    <!-- Encabezado del sitio con logotipo y menú de navegación -->
+    <header>
+        <div class="logo">
+            <img src="https://i.postimg.cc/SQctRHMd/images-removebg-preview.png" alt="Logo Unidad Educativa Abelardo Flores">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#herramientas">Herramientas Educativas</a></li>
+                <li><a href="#registro">Registro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sección de bienvenida con un banner -->
+        <section id="inicio" class="banner">
+            <h1>Bienvenidos a la Unidad Educativa Abelardo Flores</h1>
+            <p>Plataforma interactiva para el aprendizaje y la gestión educativa.</p>
+        </section>
+
+        <!-- Sección de herramientas educativas interactivas -->
+        <section id="herramientas">
+            <h2>Herramientas Educativas</h2>
+            <!-- Herramienta de comparación de números -->
+            <div class="herramienta">
+                <img src="https://i.postimg.cc/xTZXJpHx/5985537.png" alt="Comparar Números">
+                <h3>Comparar Números</h3>
+                <input type="number" id="num1" placeholder="Número 1">
+                <input type="number" id="num2" placeholder="Número 2">
+                <button id="btnComparar">Comparar</button>
+                <div id="resultadoComparacion"></div>
+            </div>
+
+            <!-- Herramienta para mostrar el mes correspondiente -->
+            <div class="herramienta">
+                <img src="https://i.postimg.cc/28yq5NqL/depositphotos-383764412-stock-illustration-calendar-schedule-clock-icon-organizer.jpg" alt="Mes del Año">
+                <h3>Mes del Año</h3>
+                <input type="number" id="mes" placeholder="Número del 1 al 12">
+                <button id="btnMes">Mostrar Mes</button>
+            </div>
+
+            <!-- Herramienta de gestión de nombres -->
+            <div class="herramienta">
+                <img src="https://i.postimg.cc/fWBtZRbh/color-icon-for-name-vector.jpg" alt="Nombres">
+                <h3>Gestión de Nombres</h3>
+                <input type="text" id="nombre" placeholder="Nombre">
+                <button id="btnAgregar">Agregar</button>
+                <div id="listaNombres"></div>
+            </div>
+        </section>
+
+        <!-- Sección para registro de usuarios -->
+        <section id="registro">
+            <h2>Registro de Usuarios</h2>
+            <form id="formRegistro">
+                <div>
+                    <label for="id">ID:</label>
+                    <input type="text" id="id" required>
+                </div>
+                <div>
+                    <label for="cedula">Cédula:</label>
+                    <input type="text" id="cedula" required>
+                </div>
+                <div>
+                    <label for="nombres">Nombres y Apellidos:</label>
+                    <input type="text" id="nombres" required>
+                </div>
+                <div>
+                    <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+                    <input type="date" id="fechaNacimiento" required>
+                </div>
+                <div>
+                    <label for="ciudad">Ciudad:</label>
+                    <select id="ciudad" required>
+                        <option value="Quito">Quito</option>
+                        <option value="Guayaquil">Guayaquil</option>
+                        <option value="Cuenca">Cuenca</option>
+                        <option value="Ambato">Ambato</option>
+                        <option value="Loja">Loja</option>
+                    </select>
+                </div>
+                <button type="button" id="btnRegistrar">Registrar</button>
+            </form>
+            <!-- Tabla para mostrar los usuarios registrados -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Cédula</th>
+                        <th>Nombres</th>
+                        <th>Fecha de Nacimiento</th>
+                        <th>Ciudad</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaUsuarios"></tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- Pie de página con información de la institución -->
+    <footer>
+        <p>© 2024 Unidad Educativa Abelardo Flores | Diseñado para mejorar el aprendizaje.</p>
+    </footer>
+
+    <script src="Actividad2.js"></script>
+</body>
+</html>

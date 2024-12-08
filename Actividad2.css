@@ -1,0 +1,201 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilo del encabezado */
+header {
+    background: #003366;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    width: 150px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo del banner */
+.banner {
+    color: rgb(19, 4, 61);
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.banner h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 1.2em;
+}
+
+/* Sección de herramientas educativas */
+#herramientas {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width: 1200px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#herramientas h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #003366;
+}
+
+.herramienta {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.herramienta img {
+    width: 50px;
+    margin-right: 20px;
+}
+
+.herramienta h3 {
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.herramienta input,
+.herramienta button {
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.herramienta button {
+    background-color: #003366;
+    color: white;
+    cursor: pointer;
+}
+
+.herramienta button:hover {
+    background-color: #00509e;
+}
+
+/* Sección de registro */
+#registro {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width: 800px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#registro h2 {
+    text-align: center;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+#registro form {
+    display: flex;
+    flex-direction: column;
+}
+
+#registro form div {
+    margin-bottom: 15px;
+}
+
+#registro form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+#registro form input,
+#registro form select {
+    padding: 10px;
+    font-size: 1em;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#registro form button {
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#registro form button:hover {
+    background-color: #00509e;
+}
+
+/* Estilo de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th,
+table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #003366;
+    color: white;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Pie de página */
+footer {
+    background: #003366;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
